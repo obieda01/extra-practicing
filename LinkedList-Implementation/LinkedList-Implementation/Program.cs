@@ -15,7 +15,12 @@ namespace LinkedList_Implementation
             ls.add("ahmad3");
 
             ls.add("ahmad4");
-            ls.printValues(ls);
+            ls.printValues();
+            string st=ls.remove();
+            Console.WriteLine("\n\n\n\n\n\n\n");
+
+           ls.printValues();
+            Console.WriteLine("\n\n\n\n\n\n\n"+st);
 
         }
     }

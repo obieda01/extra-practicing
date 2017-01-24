@@ -10,7 +10,8 @@ namespace LinkedList_Implementation
     {
         T value;
         MyLinkeList<T> next;
-        MyLinkeList<T> head;
+        MyLinkeList<T> top;
+        public MyLinkeList() { }
         public MyLinkeList(T value)
             {
                 this.value = value;
@@ -25,17 +26,25 @@ namespace LinkedList_Implementation
         {
             MyLinkeList<T> temp = new MyLinkeList<T>(value);
             temp.value = value;
-            temp.next = head;
-            head = temp;
+            temp.next = top ;
+            top = temp;
             
         }
-
-        public void printValues(MyLinkeList<T> ls)
+        public T remove()
         {
-            while (ls.next!=null)
+            
+            T value = top.value;
+            top = top.next;
+            return value;
+        }
+
+        public void printValues()
+        {
+            MyLinkeList<T> temp = top;
+            while (temp!=null)
             {
-                Console.WriteLine(ls.value);
-                ls.next = ls.next.next;
+                Console.WriteLine(temp.value);
+                temp = temp.next;
             }
 
         }
