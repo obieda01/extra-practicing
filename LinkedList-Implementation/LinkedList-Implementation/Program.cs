@@ -10,6 +10,13 @@ namespace LinkedList_Implementation
     {
         static void Main(string[] args)
         {
+            MyLinkeList<string> ls = new MyLinkeList<string>("ahmad1");
+            ls.add("ahmad2");
+            ls.add("ahmad3");
+
+            ls.add("ahmad4");
+            ls.printValues(ls);
+
         }
     }
 }
