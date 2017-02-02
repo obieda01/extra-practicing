@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Dictionary_Hashtable_Implementation
 {
-    class MyDictionary
+    public class MyDictionary
     {
+        int count = 0;
+        int capacity = 32;
+        DictionaryLinkedList<T>[] table;
+        
     }
 }
