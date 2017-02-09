@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Queue_Implementation
 {
-    public class MyQueue<T>
+    public partial  class MyQueue<T>
     {
-         class QueueNode<T>
+         public class QueueNode<T>
         {
             public T value;
             public QueueNode<T> next;

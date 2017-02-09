@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E9A4CEFF-9C29-4369-A024-3FB9D2BEF1A1}</ProjectGuid>
+    <ProjectGuid>{B963F171-7ACC-4B56-A641-78ADB3D8D695}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CrackingInterview</RootNamespace>
-    <AssemblyName>CrackingInterview</AssemblyName>
+    <RootNamespace>CodeInterviewSolutions</RootNamespace>
+    <AssemblyName>CodeInterviewSolutions</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CrackingInterviewMethods.cs" />
+    <Compile Include="AllMethods.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

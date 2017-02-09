@@ -1,14 +1,15 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+using Queue_Implementation;
 namespace UnitTestProject1
 {
-    [TestClass]
+    [TestClass()]
     public class UnitTest1
     {
-        [TestMethod]
+        [TestMethod()]
         public void TestMethod1()
         {
+            MyQueue<string> ss = new MyQueue<string>();
         }
     }
 }

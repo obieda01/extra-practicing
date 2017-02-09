@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3EF4E174-DDA2-4DD5-8533-DEEC9CC31683}</ProjectGuid>
+    <ProjectGuid>{769373E9-791D-4845-BFB1-9816FEEC2AE0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CrackingInterview.Tests</RootNamespace>
-    <AssemblyName>CrackingInterview.Tests</AssemblyName>
+    <RootNamespace>AllMethodsTests</RootNamespace>
+    <AssemblyName>AllMethodsTests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -25,7 +25,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -46,20 +45,18 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
-          <Private>False</Private>
-        </Reference>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CrackingInterviewTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CrackingInterview\CrackingInterview.csproj">
-      <Project>{e9a4ceff-9c29-4369-a024-3fb9d2bef1a1}</Project>
-      <Name>CrackingInterview</Name>
+    <ProjectReference Include="..\CodeInterviewSolutions\CodeInterviewSolutions.csproj">
+      <Project>{b963f171-7acc-4b56-a641-78adb3d8d695}</Project>
+      <Name>CodeInterviewSolutions</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
