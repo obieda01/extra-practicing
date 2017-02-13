@@ -108,24 +108,40 @@ namespace CodeInterviewSolutions
         {
             StringBuilder sb =  new StringBuilder();
             char[] charString = sourceString.ToCharArray();
-            int counter = 1;
+            int counter = 0;
 
-            for (int i = 0; i < sourceString.Length-1; i++)
+            for (int i = 0; i < sourceString.Length; i++)
             {
-                if (charString[i] == charString[i + 1])
-                {
-                    counter++;
-                }
-                else
+                counter++;
+                if (sourceString.Length<=i+1||charString[i] != charString[i + 1])
                 {
                     sb.Append(charString[i].ToString());
                     sb.Append(counter.ToString());
-                    counter = 1;
+                    counter = 0;
                 }
             }
-            sb.Append(charString[i].ToString());
-            sb.Append(counter.ToString());
             return sb.Length >= charString.Length ? sourceString : sb.ToString();
+        }
+
+        public int[][] rotateImage(int[][] pixels)
+        {
+            if (pixels.Length == 0 || pixels.Length != pixels[0].Length) return pixels;
+            int rowsCount = pixels.Length;
+
+            for (int i = 0; i <rowsCount/2; i++)
+            {
+                int firstElement = rowsCount;
+                int lastElemet = rowsCount - i - 1;
+                for (int j = 0; j < pixels.Length; j++)
+                {
+
+                }
+
+
+            }
+
+
+            return new int[][] { };
         }
     }
 }
